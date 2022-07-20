@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fuga error explicabo voluptates consequuntur libero
+    molestiae, neque ducimus rem deserunt sequi doloribus unde animi veritatis omnis amet maiores, provident
+    perspiciatis!
+
+    <p>hello there</p>
+    <p>hello there2</p>
+    <p>hello there3</p>
+    <p>hello there3</p>
+    <p>hello there5</p>
+
+    <button id="tog">toggle</button>
+
+    <div id="1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis rerum veniam doloremque animi quaerat
+        non ex ipsa fugit alias ipsum. Nisi doloribus qui laudantium aperiam. Perferendis architecto tenetur cumque ipsam.
+    </div> -->
+    <!-- 
+    Name : <input type="text" name="First name">
+    Phone Number : <input type="number" name="Phone number">
+    Password : <input type="password" name="pass"> -->
+
+    <!-- <p>List1</p>
+    <ul id="item-list">
+        <li id="first-li">
+            <a href="www.google.com">Outside</a>
+            <div><a id="inside-a-div">Inside</a></div>
+        </li>
+        <li>Milk</li>
+        <li>tea</li>
+    </ul>
+    <button>press it</button>
+    
+    <h1>Heading</h1> -->
+
+    <div id="container">
+
+        <p id="question">What is capital of india</p>
+
+        <input type="text" id="answer-box">
+
+        <p id="result"></p>
+
+        <p id="answer"></p>
+
+        <button>Submit</button>
+    </div>
+
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // console.log("hello");
+        // $('p').click(function () {
+        //     console.log("Ypou click");
+        //     $(this).hide();
+        // });
+
+        // $('p').dblclick(function () {
+        //     console.log("Ypou1 click");
+        //     $(this).hide();
+        // });
+
+        // $('p').mouseenter(function () {
+        //     console.log("you enter");
+        //     $(this).hide();
+        // });
+
+        // $('p').on({
+        //     click : function(){
+        //         console.log("Thanks");
+        //     },
+        //     mouseleave : function(){
+        //         console.log("mouseleave");
+        //     }
+        // })
+
+        // $('#tog').click(function(){
+        //     $('#1').fadeOut(1000);
+        // })
+
+        // $('#tog').click(function(){
+        //     $('#1').fadeIn(1000);
+        // })
+
+
+        // $('#tog').click(function(){
+        //     $('#1').fadeToggle(1000);
+        // })
+
+        // $('input').focus(function(){
+        //     $(this).css("background-color" ,"yellow")
+        // })
+
+        // $('input').blur(function(){
+        //     $(this).css("background-color", "red")
+        // })
+
+        // $('p').on({
+        //     mouseenter: function () {
+        //         $(this).css("background-color", "yellow")
+        //     },
+        //     mouseleave: function () {
+        //         $(this).css("background-color", "grey")
+        //     },
+        //     click: function () {
+        //         $(this).css("color", "white")
+        //         $(this).css("background-color", "black")
+        //     }
+        // })
+
+        // $('h1').click(function(){
+        //     $('h1').css('color','yellow')
+        //     $('h1').text("Hey,there")
+        // })
+
+        // $('button').click(function(){
+        //     $('#item-list').find('a').css('color','red');
+        // });
+
+        $('button').click(function(){
+            var answer = $('#answer-box').val();
+
+            if(answer == 'Delhi' || answer == 'delhi'){
+                $('#result').text('Your answer is right');
+            }else{
+                $('#result').html('<span style="color:red">Your answer is wrong.')
+                $('#answer').text('Correct answer is Delhi.')                    
+            }
+        })
+ 
+    });
+</script>
+
+</html>
